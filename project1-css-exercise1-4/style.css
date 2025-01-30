@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(56, 154, 187);
+}
+
+/* add id name in the html file and change the alignment to center the image */
+#center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:20%
+}
+
+p.email, .phone {
+    text-align: center;
+}
+
+/* Style h1 and h2 with white shadow */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 2px white;
+}
+
+/* Added hovering effect to all the links */
+a:hover {
+    color: white;
+}
+
+a.link {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact:hover {
+    color:red;
+}
+
