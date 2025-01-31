@@ -39,8 +39,35 @@ a.link {
 a {
     text-decoration: none;
 }
+/* Center the element and put a hover effect to catch attention */
+#contact {
+    text-align: center;
+}
 
 #contact:hover {
     color:red;
+}
+
+
+div {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#bottom {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
 
