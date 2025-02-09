@@ -1,0 +1,241 @@
+/**, *:before, *:after {
+    box-sizing: border-box;
+} */
+
+/* I tried to clean the code as much as possible, but I just want it to work for now. */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile-pic {
+    /*border-radius: 30%;
+    border-style: solid;
+    border-width: 3cap;
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: yellow;
+    border-left-color: red; */
+    
+    width: 200px;
+    height:200px;
+    border-radius:30%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Style h1 class name with shadow*/
+.name {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray; */
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+main {
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    margin: 1%;
+}
+
+.cv-container {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position: relative; 
+    width:90%;  
+    max-width:900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 100px 200px red;
+    overflow: hidden;
+    padding: 25px;
+}
+
+/* add id name in the html file and change the alignment to center the image */
+#center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:20%
+}
+
+p.email, .phone {
+    text-align: center;
+}
+
+
+
+/* h2 with shadow */
+/*change the previous font color to #007BFF* it looks nicer */
+
+h2 {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 2px white; */
+
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, ul {
+    list-style: disc;
+    padding-left:20px;
+}
+/* Added hovering effect to all the links */
+a:hover {
+    color: green;
+}
+
+a.link {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+}
+/* Center the element and put a hover effect to catch attention */
+#greet-contact {
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+#greet-contact:hover {
+    color:red;
+}
+
+
+#contact{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 10%;
+            border-top: 1px;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.bottom {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color:#666;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+#contact {
+    margin-top: 1px;
+    margin-bottom: 1px; 
+}
+
+#my-links {
+    margin-top: 10px;
+    border: 2px solid skyblue;
+}
+
+div form button .btn-submit {
+    border: 2px solid red;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 15px;
+    }
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+ }
+}
+@media (max-width: 480px) {
+
+    .cv-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+
+        font-size: 1.
+    }
+
+    p, ul {
+       font-size: 0.9rem;
+    }
+}
+
+/* Animation */
+.cv-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* whenever the page is refreshed */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
