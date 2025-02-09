@@ -1,0 +1,132 @@
+/**, *:before, *:after {
+    box-sizing: border-box;
+} */
+.profile-pic{
+    border-radius: 30%;
+    border-style: solid;
+    border-width: 3cap;
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: yellow;
+    border-left-color: red;
+}
+
+/* Style h1 class name with shadow*/
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+}
+
+main {
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+}
+
+.cv-container {
+    display:flex;
+    flex-direction: column;
+    position: relative; 
+    width:90%;  
+    max-width:900px;
+    background-color: white;
+    box-shadow: 0 100px 200px red;
+    padding: 25px;
+}
+
+/* add id name in the html file and change the alignment to center the image */
+#center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:20%
+}
+
+p.email, .phone {
+    text-align: center;
+}
+
+
+
+/* h2 with shadow */
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 2px white;
+}
+
+/* Added hovering effect to all the links */
+a:hover {
+    color: white;
+}
+
+a.link {
+    color:red;
+}
+
+a {
+    text-decoration: none;
+}
+/* Center the element and put a hover effect to catch attention */
+#greet-contact {
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+#greet-contact:hover {
+    color:red;
+}
+
+
+#contact{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 10%;
+            border-top: 1px;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.bottom {
+    text-align: center;
+}
+
+footer {
+    bottom: 20px;
+    text-align: center;
+}
+
+#contact {
+    margin-top: 1px;
+    margin-bottom: 1px; 
+}
+
+#my-links {
+    margin-top: 10px;
+    border: 2px solid skyblue;
+}
+
+div form button .btn-submit {
+    border: 2px solid red;
+}
