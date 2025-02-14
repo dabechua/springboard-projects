@@ -1,0 +1,5 @@
+partyLocation
+shiftValue
+encryptedMessage
+decryptedMessage
+isPartySafe
