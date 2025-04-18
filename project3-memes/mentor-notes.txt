@@ -1,0 +1,23 @@
+Mentor (Victor) Reflection
+
+Time Spent: a lot of different days and time..
+
+I used ChatGPT as a coding assistant to help guide me through the structure, explain errors, and suggest improvements. It helped me understand canvas, JavaScript image handling, and gave step-by-step code breakdowns.
+
+*What I Learned (Can't remember all but I'll try) :
+- How to use the `<canvas>` element in HTML5.
+- How to get and use the 2D rendering context with `getContext("2d")`.
+- How to load an image from file input and draw it on a canvas.
+- How to overlay styled text for meme creation.
+- Basic debugging with the browser console.
+
+**Challenges I Overcame:**
+- An error with `ctx.clearRect` not working due to the script loading before the DOM.
+- Understanding how `FileReader` works and when to trigger the drawing logic.
+
+**Tools Used:**
+- ChatGPT (AI assistant) for step-by-step guidance and error explanation.
+
+**Next Steps: I might do this some other days once I'm done with the course
+- Add a download meme feature.
+- Try auto-sizing text or templates.
